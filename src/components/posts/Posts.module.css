@@ -1,0 +1,89 @@
+.dialogs {
+  display: flex;
+  color: #000;
+  flex: 1;
+  margin: 0 auto;
+  width: 80vw;
+}
+.none_scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+.messageBox {
+  flex: 1;
+}
+.messagesContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
+  grid-gap: 10px;
+}
+
+.messageInput {
+  flex: 1;
+  padding: 10px;
+}
+.input {
+  /* border-radius: 0.4rem; */
+  min-height: 25px;
+  height: fit-content;
+
+  /* border: 1px solid #a2a59f; */
+  width: 100%;
+}
+.input:hover,
+input:focus,
+input:active {
+  outline: none;
+}
+.input_new_description {
+  height: fit-content;
+  resize: vertical;
+  width: 100%;
+  min-height: 60px;
+  max-height: 200px;
+  margin-top: 15px;
+}
+.input_new_title {
+  max-height: fit-content;
+}
+
+.checkedBlock {
+  grid-column: 2/4;
+  display: flex;
+  justify-content: center;
+}
+.checkedOptions {
+  display: flex;
+  justify-content: center;
+}
+.funcBlock {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  height: 50px;
+}
+.button_send_block {
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+}
+.button_all_posts {
+  margin-right: 5px;
+}
+
+.search {
+  grid-column: 1/1;
+  width: 70%;
+  height: 25px;
+}
+
+.header_button_block {
+  grid-column: 4/4;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
